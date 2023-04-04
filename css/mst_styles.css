@@ -1,0 +1,166 @@
+
+.no-scroll {
+	overflow:hidden;
+	margin-right:16px;
+}
+
+
+#mst_shelf_bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+    display: none;
+	z-index: 5;
+}
+
+
+#mst_footer_shelf {
+	position: fixed;
+	top: 0;
+	right: -40%;
+	background: #f7f7f7;
+	width: 40%;
+	height: 100%;
+	z-index: 60;
+    transition:0.3s;
+    overflow: auto;
+}
+
+#mst_footer_shelf.opened {
+    right:0;
+}
+
+.mst_shelf_wrapper {
+	padding: 50px;
+}
+
+
+
+.top_bar_groups_wrapper {
+	display: flex;
+	gap: 10px;
+}
+
+.mst_bar_group_button {
+	background: #eee;
+	padding: 6px 20px;
+	cursor: pointer;
+	transition: 0.3s;
+	border: solid 2px;
+	border-color: #ccc;
+}
+
+
+
+.mst_bar_group_button p {
+	margin:0;
+}
+
+.mst_bar_group_button .title {
+	font-size:18px;
+	font-weight:bold;
+}
+
+
+
+.mst_bar_group_button .price {
+	color: #b49f5e;
+	font-weight: 600;
+}
+
+.mst_bar_group_button.aktiv, .mst_bar_group_button:hover {
+	border-color:#b49f5e;
+}
+
+.mst_bar_group_button.aktiv .title {
+	color: #b49f5e;
+}
+
+
+
+.mst_tkanina_colors_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.mst_tkanina_colors_wrapper .color-item {
+	flex-basis: 14%;
+	margin: 1%;
+}
+
+
+
+.mst_color_box {
+	display: flex;
+	flex-direction: column;
+}
+
+.mst_color_box img {
+	width: 70px;
+}
+
+
+
+.mst_tkanina_contner {
+	width:630px;
+}
+
+.mst_tkanina_colors_wrapper {
+	overflow: hidden;
+	transition:0.5s;
+	max-height: 100px;
+
+}
+
+.mst_tkanina_contner.opened .mst_tkanina_colors_wrapper, .mst_tkanina_contner.stay .mst_tkanina_colors_wrapper {
+	max-height:1000px;
+}
+
+
+.mst_color_box span {
+	display:none;
+}
+
+.more-about-link {
+	font-size: 14px;
+	float: right;
+	color: #b49f5e;
+}
+
+
+.mst_choosen_wrapper .tkanina {
+	display: flex;
+	align-items: center;
+	gap:10px;
+}
+
+
+
+.mst_choosen_wrapper .zdjecie {
+	width: 50px;
+	height: 50px;
+}
+
+
+.top_bar_groups_wrapper label:not(:first-child) .price::before {
+	content:"+";
+}
+
+.summary.entry-summary .price {
+	display: none;
+}
+
+
+.mst_choosen_wrapper {
+	display: flex;
+}
+
+.tkanina-title {
+	flex-basis: 205px;
+	text-align: center;
+	font-weight: bold;
+}
